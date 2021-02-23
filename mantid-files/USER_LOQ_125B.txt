@@ -1,0 +1,37 @@
+LOQ
+PRINT This is a LOQ MAIN DET user file for Mantid
+DET/MAIN
+MASK/CLEAR
+MASK/CLEAR/TIME
+L/R 35 419 3
+L/WAV 2.2 10.0 .035/LOG  
+L/Q .008,0.002,0.08,-0.05,0.285
+L/QXY 0 0.1 .002/lin
+
+BACK/MON/TIMES 31000 39000
+FIT/TRANS/YLOG 2.2 10.0
+MON/DIRECT=DIRECT_LOQ_MAIN_124.txt
+MON/HAB=DIRECT_LOQ_HAB_983.txt
+PRINT using new direct_loq_main_124.txt
+MON/FLAT=FLAT_CELL_LOQ_MAIN_115.txt
+!PRINT XCORR **is** implemented if using Mantid 1.1.9556 or later & LOQ_Definition.xml valid from 2002-02-26
+!PRINT YCORR **is** implemented if using Mantid 1.1.9556 or later & LOQ_Definition.xml valid from 2002-02-26
+MASK H126>H127
+!PRINT no box masks implemented because corners are masked by default
+MASK/T 19711.5 21228.5
+MASK/T 39354.5 41348.5
+!SMK 22/02/13 Reinstate these 2 spectra as no longer seems to be true
+!PRINT masking out hab spectra 16641 & 17341 which get double counts
+!MASK S16641
+!MASK S17341
+! set offset value = (-11.0 + Lsm) x 1000
+SAMPLE/OFFSET -1.0
+SET CENTRE 323.39 330.748 5.00 5.00
+SET CENTRE/HAB 322.19 320.875
+SET SCALES 1.4621 1.179 1.233 1.244 1.216
+!PRINT masking off top of detector for p-cell
+!MASK H119>125
+PRINT MON/HABEFF & MON/HABPATH corrections not yet implemented
+PRINT 22/02/13 centre & scale from Mantid/SasView, 75894-add, Insert at 7 mbar
+PRINT 22/03/13 HAB centre from Mantid, 75896-add
+PRINT Loaded: MASKLOQ_MAN_125B, Team Loq, 8mm, Hellma rack

@@ -1,0 +1,4 @@
+MANTID_BATCH_FILE,created_on,21/01/2015,created_by,SMK,for_instrument,LOQ,use_with_mask,USER_125B,on_detector,main,run_file_type,nxs,RESERVED
+sample_sans,75965-add,sample_trans,75876,sample_direct_beam,75869,can_sans,75962-add,can_trans,75873,can_direct_beam,75869,output_as,GFP_1mgml
+sample_sans,75964-add,sample_trans,75875,sample_direct_beam,75869,can_sans,75962-add,can_trans,75873,can_direct_beam,75869,output_as,GFP_5mgml
+sample_sans,75963-add,sample_trans,75874,sample_direct_beam,75869,can_sans,75962-add,can_trans,75873,can_direct_beam,75869,output_as,GFP_10mgml
