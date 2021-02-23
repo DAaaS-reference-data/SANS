@@ -1,0 +1,36 @@
+====================
+
+
+Bio Example
+
+Source                       : ISIS (Neutron)
+Instrument                   : LOQ (TS1)
+Team                         : Dr Luke Clifton (Sample) / Dr Steve King (Instrument)
+Contact                      : stephen.king@stfc.ac.uk
+
+Sample                       : 23kDa Green Fluorescent Protein (GFP) in salt buffer
+
+Moderator-Sample distance    : 10.999 m
+Sample-Main Detector distance: 4.151 m
+Beam Shape/Size              : Circular, 8 mm diameter
+
+Sample Container             : Synthetic Quartz Cuvette (Hellma Type 110-QS / Starna Type 21)
+
+Data Reduction Software      : Mantid
+Mantid SANS User File        : USER_LOQ_125B.TXT
+
+
+Data
+----
+Scattering	Transmission	Dataset
+
+		75869		Direct beam
+
+75962-add	75873		150mM NaCl buffer
+	
+75965-add	75876		 1mg/ml GFP (2mm pathlength)
+75964-add	75875		 5mg/ml GFP (2mm pathlength)
+75963-add	75874		10mg/ml GFP (2mm pathlength)
+
+
+====================
